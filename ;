@@ -1,0 +1,13 @@
+
+[Unit]
+Description=Podman API Socket
+Documentation=man:podman-api(1)
+
+[Socket]
+ListenStream=/home/fatherlinux/docker.sock
+SocketMode=0660
+
+[Install]
+WantedBy=sockets.target
+
+
