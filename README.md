@@ -45,7 +45,7 @@ echo $(oc get route el-sigstore-demo-app --template='http://{{.spec.host}}')
 Select Content type as `application/json`. Add secret eg: `sigstore`. Click on
 `Add Webhook`.
 
-### Test It NOW
+### Test It
 
 Now when we perform any push event on the repo, it will trigger the pipeline
 with a new pipeline run. To test it, run:
